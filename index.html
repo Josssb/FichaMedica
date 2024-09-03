@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Médica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulario de Ficha Médica</h1>
+    <form id="fichaMedicaForm">
+        <label for="rut">RUT:</label><br>
+        <input type="text" id="rut" name="rut" required><br><br>
+
+        <label for="nombres">Nombres:</label><br>
+        <input type="text" id="nombres" name="nombres" required><br><br>
+
+        <label for="apellidos">Apellidos:</label><br>
+        <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+        <label for="direccion">Dirección:</label><br>
+        <input type="text" id="direccion" name="direccion"><br><br>
+
+        <label for="ciudad">Ciudad:</label><br>
+        <input type="text" id="ciudad" name="ciudad"><br><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+
+        <label for="estadoCivil">Estado Civil:</label><br>
+        <select id="estadoCivil" name="estadoCivil">
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+            <option value="divorciado">Divorciado</option>
+            <option value="viudo">Viudo</option>
+        </select><br><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios"></textarea><br><br>
+
+        <button type="submit">Guardar</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</body>
+</html>
